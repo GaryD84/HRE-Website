@@ -1,0 +1,172 @@
+<!doctype html> <html lang ="en">
+
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Hickey Race Engineering</title>
+<link href="css/style1.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<img id = "img" src="images/Hre Logo.jpg" alt="Engineering" class ="responsive">
+	<div class="nav" id="mynav">
+	  <a href="index.html">Home</a>
+
+	  <a href="services.html">Services</a>
+
+
+
+	  <a href="news.html">News</a>
+	  <a href="about.html">About Us</a>
+
+	  <a href="videos.html">Videos</a>
+
+
+
+	  <div class="dropdown">
+		<button class="dropbtn">Gallery
+		<i class="fa fa-caret-down"></i>
+		</button>
+		<div class="dropdown-content">
+		  <a href="pictures.html"  class="active2">Pictures</a>
+
+		</div>
+	  </div>
+	  <a href="form.html">Contact Us</a>
+	</div>
+
+<div class="slideshow-container">
+	<h2 class="white">Pictures</h2>
+
+	<div class="mySlides fade">
+	  <img class="slides" src="images/cockpit.JPG" alt="">
+	  <div class="text">inside the car cockpit</div>
+	</div>
+
+	<div class="mySlides fade">
+	  <img class="slides" src="images/Blue car.JPG" alt="">
+	  <div class="text">Blue Mini</div>
+	</div>
+
+	<div class="mySlides fade">
+	  <img class="suit2" src="images/min pic.JPG" alt="">
+	  <div class="text">mini collection</div>
+	</div>
+
+	<div class="mySlides fade">
+	  <img class="slides" src="images/engine test.JPG" alt="">
+	  <div class="text">Engine Lab</div>
+	</div>
+
+	<div class="mySlides fade">
+	  <img class="slides" src="images/engine 2.JPG" alt="">
+	  <div class="text">Green Morris Engine</div>
+	</div>
+
+	<div class="mySlides fade">
+	  <img class="slides" src="images/green engine.JPG" alt="">
+	  <div class="text">Fully rebuilt Egine - the green beast!</div>
+	</div>
+
+	<div class="mySlides fade">
+	  <img class="slides" src="images/paul metalwork.JPG" alt="metalwork picture">
+	  <div class="text">Mr.Hickey Metalworking/Customizing</div>
+	</div>
+
+	<div class="mySlides fade">
+	  <img class="slides" src="images/mini tuned engine.JPG" alt="engine pic">
+	  <div class="text">tuned to fine performance</div>
+	</div>
+
+
+<div class="mySlides fade">
+	  <img class="slides" src="images/hre car line up.JPG" alt="cars lined up">
+	  <div class="text">HRE Car Line Up</div>
+	</div>
+
+	<div class="mySlides fade">
+		  <img class="slides" src="images/cup.JPG" alt="cup picture">
+		  <div class="text">HRE trophy cup</div>
+	</div>
+
+
+
+
+
+
+
+<br>
+
+<div id="dotstyle">
+ 	<span class="dot">
+ 	</span>
+
+	<span class="dot">
+	</span>
+
+	<span class="dot">
+	</span>
+
+	<span class="dot">
+	</span>
+
+	<span class="dot">
+	</span>
+
+	<span class="dot">
+	</span>
+
+	<span class="dot">
+	</span>
+
+	<span class="dot">
+	</span>
+</div>
+
+<!-- Java Script for Gallery-->
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides(){
+
+	var i;
+	var slides = document.getElementsByClassName("mySlides");
+	var dots = document.getElementsByClassName("dot");
+	for (i = 0; i < slides.length; i++)
+	{
+		   slides[i].style.display = "none";
+    }
+		slideIndex++;
+		if (slideIndex > slides.length) {slideIndex = 1}
+		for (i = 0; i < dots.length; i++)
+	{
+        dots[i].className = dots[i].className.replace(" active3", "");
+    }
+		slides[slideIndex-1].style.display = "block";
+		dots[slideIndex-1].className += " active3";
+		setTimeout(showSlides, 3000); // Change image every 2 seconds
+}
+</script>
+
+<!-- Java Script for Navbar-->
+<script>
+function myFunction(){
+
+    var x = document.getElementById("mynav");
+    if (x.className === "nav")
+	{
+        x.className += " responsive";
+    } else {
+        x.className = "nav";
+    }
+}
+</script>
+
+<footer><strong>&copy;Copyright 2019.</strong> <a href="https://www.facebook.com/HREIRL/" target="_blank"><img id = "fb" src="images/facebook.png" alt="HRE FaceBook Profile Link"/></a>
+<a href="https://www.instagram.com" target="_blank"><img id = "insta" src="images/insta.png" alt="future instagram link"/></a>
+<a href="https://www.youtube.com/channel/UCWitjDsZbJziHzFvwO301oQ" target="_blank"><img id = "Youtune HRE Chanel" src="images/YOUTUBE.PNG" alt="Youtube HRE link"/></a></footer>
+</body>
+</html>

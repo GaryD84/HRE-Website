@@ -1,0 +1,83 @@
+<!doctype html> <html lang ="en">
+
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Hickey Race Engineering</title>
+<link href="css/style1.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<img id = "img" src="images/Hre Logo.jpg" alt="Engineering" class ="responsive">
+	<div class="nav" id="mynav">
+		  <a href="index.html">Home</a>
+
+		  <a href="services.html" class="active">Services</a>
+
+		  <a href="news.html">News</a>
+
+		  <a href="about.html">About Us</a>
+
+		  <a href="videos.html">Videos</a>
+
+		 <!-- creating a drop down button-->
+			<div class="dropdown">
+			<button class="dropbtn">Gallery
+			<i class="fa fa-caret-down"></i>
+			</button>
+			<div class="dropdown-content">
+			  <a href="pictures.html">Pictures</a>
+			</div>
+	  </div>
+
+	  <!--<div class="dropdown">
+	  		<button class="dropbtn">Service Type
+	  		<i class="fa fa-caret-down"></i>
+	  		</button>
+	  		<div class="dropdown-content">
+	  		  <a href="services.html"  class="active2">Engine Rebuild/Retune</a>
+
+	  		</div>
+	  </div>-->
+	  <a href="form.html">Contact Us</a>
+	  <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+	</div>
+<div class="wrapper">
+	<div class="columns">
+	  <div class="column">
+		<h2 class="white">Carburetor Rebuilds/Engine Tuning</h2>
+		<img id="rn" src="images/webbers.JPG" alt="carb picture" class ="responsive"/>
+	  </div>
+
+	  <div class="column">
+		<h2 class="white">Customized Roll Cage Made To Exacting Specs</h2>
+		<img id="bld" src="images/mini rolling cage.jpg" alt="car rolling cage" class ="responsive"/>
+	  </div>
+
+	  <div class="column">
+		<h2 class="white">High Spec Engineered Engine Components</h2>
+		<img id="eng" src="images/rebuilt engine.JPG" alt="engine" class ="responsive"/>
+	  </div>
+	</div>
+</div>
+
+<script>
+function myFunction(){
+
+    var x = document.getElementById("mynav");
+    if (x.className === "nav")
+	{
+        x.className += " responsive";
+    } else {
+        x.className = "nav";
+    }
+}
+</script>
+
+<footer><strong>&copy;Copyright 2019.</strong> <a href="https://www.facebook.com/HREIRL/" target="_blank"><img id = "fb" src="images/facebook.png" alt="HRE FaceBook Profile Link"/></a>
+<a href="https://www.instagram.com" target="_blank"><img id = "insta" src="images/insta.png" alt="future instagram link"/></a>
+<a href="https://www.youtube.com/channel/UCWitjDsZbJziHzFvwO301oQ" target="_blank"><img id = "Youtune HRE Chanel" src="images/YOUTUBE.PNG" alt="Youtube HRE link"/></a></footer>
+</body>
+</html>

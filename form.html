@@ -1,0 +1,85 @@
+<!doctype html> <html lang ="en">
+
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Hickey Race Engineering</title>
+<link href="css/style1.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<img id = "img" src="images/Hre Logo.jpg" alt="Engineering" class ="responsive">
+	<div class="nav" id="mynav">
+	  <a href="index.html">Home</a>
+
+	  <a href="services.html">Services</a>
+
+	  <a href="news.html">News</a>
+
+	  <a href="about.html">About us</a>
+
+	  <a href="videos.html">Videos</a>
+
+
+
+	  <div class="dropdown">
+		<button class="dropbtn">Gallery
+		<i class="fa fa-caret-down"></i>
+		</button>
+		<div class="dropdown-content">
+		  <a href="pictures.html">Pictures</a>
+
+	  </div>
+	  </div>
+	  <a href="form.html" class="active">Contact Us</a>
+	  <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+	</div>
+
+<div id="fixed">  <!--div fixed layout pixels-->
+<div class="form">
+
+	<h2 class="white">Contact</h2> <!--using heade to label form page as contact-->
+		<form id="form1" name="form1" method="post" action="mailto:jfepicfitness@gmail.com" enctype="text/plain">
+			<h2 class="white">Please Input your Details And We Will Endeavor To Answer Any Questions:</h2>
+			<p><label for="textfield">Name:</label>
+            <input type="text" name="textfield" id="textfield" maxlength="24" required></p>
+            <p><label for="email">Email:</label>
+            <input type="email" name="email" id="email" maxlength="40" required></p>
+			<p><label for="textarea">Comments:</label></p>
+            <p><textarea name="textarea" id="textarea"></textarea></p>
+          	<input type="submit" name="submit" id="submit" value="Submit">
+
+	    </form>
+
+	    <form id="form2">
+
+			<p>Contact Us By Phone & Email.</p>
+			<p>By phone: 0868160774 - </p>
+
+	    	<p>By email:paulhre@me.com </p>
+
+
+	    </form>
+		</div>
+		</div>
+
+<script>
+function myFunction(){
+
+    var x = document.getElementById("mynav");
+    if (x.className === "nav")
+	{
+        x.className += " responsive";
+    } else {
+        x.className = "nav";
+    }
+}
+</script>
+
+<footer><strong>&copy;Copyright 2019.</strong> <a href="https://www.facebook.com/HREIRL/" target="_blank"><img id = "fb" src="images/facebook.png" alt="HRE FaceBook Profile Link"/></a>
+<a href="https://www.instagram.com" target="_blank"><img id = "insta" src="images/insta.png" alt="future instagram link"/></a>
+<a href="https://www.youtube.com/channel/UCWitjDsZbJziHzFvwO301oQ" target="_blank"><img id = "Youtune HRE Chanel" src="images/YOUTUBE.PNG" alt="Youtube HRE link"/></a></footer>
+</body>
+</html>
