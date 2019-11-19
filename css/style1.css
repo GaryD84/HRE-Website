@@ -349,14 +349,14 @@ text-align: right;
 .context
 {
 	font-family:Helvetica Neue, Helvetica, Arial, Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
-	font-size: 14px;
+	font-size: 22px;
 }
 
 	/*Paragraph Layout*/
 p
 {
 	color: white;
-	font-size: 16px;
+	font-size: 24px;
 	font-family:"Cambria", "Hoefler Text", "Liberation Serif", "Times New Roman",  "Helvetica", "Arial","sans-serif";
 	text-align: justify; /*makes the writing align together at the right & left*/
 }
@@ -375,7 +375,7 @@ p
 .text 
 {
 	color: white;
-	font-size: 15px;
+	font-size: 22px;
 	top: 25px;
 	position: absolute;
 	width: 100%;
